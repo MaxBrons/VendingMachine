@@ -55,7 +55,20 @@ public class Main {
         }
     }
 
-    public static void Warm1(){}
+
+    public static void Warm1(){
+
+        System.out.println("Uw saldo is: €" + saldo);
+        System.out.println("Maak een keuze:");
+        for (String HHH : WarmEtenantw){
+            System.out.println(HHH);
+        }
+        EtenAntw();
+
+    }
+
+    public static void EtenAntw() {}
+
     public static void Koud1(){}
     public static void iets(){}
 
