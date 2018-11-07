@@ -67,9 +67,61 @@ public class Main {
 
     }
 
-    public static void EtenAntw() {}
+    public static void EtenAntw() {
+        Scanner scanner = new Scanner(System.in);
+        String ChoiceEten = scanner.next();
+        switch (ChoiceEten) {
+            case "1":
+                costs = 2.50;
+                saldo = saldo - costs;
+                if (saldo < 0.00 && saldo > -10.00) {
+                    System.out.println("Niet genoeg saldo. Aankoop geannuleerd.");
+                }
+                //else statements
+                else {
+                    System.out.println("Oke, hier is uw " + WarmEten.get(0));
+                    System.out.println("Uw saldo is nu: €" + (saldo));
+                    System.out.println("Was dat alles?");
+
+                    iets6();
+                }
+                break;
+
+            case "2":
+                costs = 2.50;
+                saldo = saldo - costs;
+                if (saldo < 0.00 && saldo > -10.00) {
+                    System.out.println("Niet genoeg saldo. Aankoop geannuleerd.");
+                }
+                //else statements
+                else {
+                    System.out.println("Oke, hier is uw " + WarmEten.get(1));
+                    System.out.println("Uw saldo is nu: €" + (saldo));
+                    System.out.println("Was dat alles?");
+
+                    iets6();
+                }
+                break;
+            case "3":
+                costs = 1.50;
+                saldo = saldo - costs;
+                if (saldo < 0.00 && saldo > -10.00) {
+                    System.out.println("Niet genoeg saldo. Aankoop geannuleerd.");
+                }
+                //else statements
+                else {
+                    System.out.println("Oke, hier is uw " + WarmEten.get(2));
+                    System.out.println("Uw saldo is nu: €" + (saldo));
+                    System.out.println("Was dat alles?");
+
+                    iets6();
+                }
+                break;
+        }
+    }
 
     public static void Koud1(){}
     public static void iets(){}
+    public static void iets6(){}
 
 }
