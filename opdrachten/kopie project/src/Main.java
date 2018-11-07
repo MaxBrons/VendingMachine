@@ -40,7 +40,23 @@ public class Main {
         }
     }
 
-    public static void Eten(){}
+    public static void Eten(){
+        System.out.println("Uw saldo is: €" + saldo);
+        System.out.println("Wit u iets warm eten?");
+        Scanner scanner = new Scanner(System.in);
+        String Eten1 = scanner.next();
+
+        switch (Eten1) {
+            case "ja":
+                Warm1();
+            case "nee":
+                Koud1();
+
+        }
+    }
+
+    public static void Warm1(){}
+    public static void Koud1(){}
     public static void iets(){}
 
 }
