@@ -510,6 +510,30 @@ public class Main {
                 break;
         }
     }
-    public static void iets6(){}
+    public static void iets6() {
+        Scanner scanner = new Scanner(System.in);
+        String choice6 = scanner.next();
+
+        switch (choice6) {
+
+
+            case "ja":
+                System.out.println("Oke, heel erg bedankt en nog een fijne dag verder!");
+                System.exit(0);
+                break;
+
+            case "nee":
+                if (saldo <= 0.00 && saldo > -10.00){
+                    System.out.println("Niet genoeg saldo. Aankoop geannuleerd.");
+                    System.exit(0);
+                    break;
+                }
+                else {
+                    System.out.println("\n");
+                    ietsmain();
+                }
+                break;
+        }
+    }
 
 }
