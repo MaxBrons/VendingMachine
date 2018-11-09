@@ -239,7 +239,96 @@ public class Main {
                 break;
         }
     }
-    public static void iets2(){}
+    public static void iets2() {
+
+
+        Scanner scanner = new Scanner(System.in);
+        String choice2 = scanner.next();
+        //choice 2 en antwoorden choice 1
+        switch (choice2) {
+
+            case "1":
+                costs = 1.50;
+                saldo = saldo - costs;
+                if (saldo <= -0.01 && saldo > -10.00) {
+                    System.out.println("Niet genoeg saldo. Aankoop geannuleerd.");
+                }
+                //else statements
+                else {
+                    System.out.println("Oke, hier is uw " + Drank.get(0));
+                    System.out.println("Uw saldo is nu: €" + (saldo));
+                    System.out.println("Was dat alles?");
+
+                    iets6();
+                }
+                break;
+
+            case "2":
+                costs = 1.50;
+                saldo = saldo - costs;
+                System.out.println(saldo);
+                if (saldo <= -0.01 && saldo > -10.00) {
+                    System.out.println("Niet genoeg saldo. Aankoop geannuleerd.");
+                    break;
+                } else{
+                    System.out.println("Oke, hier is uw " + Drank.get(1));
+                    System.out.println("Uw saldo is nu: €" + (saldo));
+                    System.out.println("Was dat alles?");
+
+
+                    iets6();
+                }
+                break;
+
+            case "3":
+                costs = 1.00;
+                saldo = saldo - costs;
+                if (saldo <= -0.01 && saldo > -10.00) {
+                    System.out.println("Niet genoeg saldo. Aankoop geannuleerd.");
+                } else{
+                    System.out.println("Oke, hier is uw " + Drank.get(2));
+                    System.out.println("Uw saldo is nu: €" + (saldo));
+                    System.out.println("Was dat alles?");
+
+
+                    iets6();
+                }
+                break;
+
+            case "4":
+                costs = 1.00;
+                saldo = saldo - costs;
+                if (saldo <= -0.01 && saldo > -10.00) {
+                    System.out.println("Niet genoeg saldo. Aankoop geannuleerd.");
+                    System.exit(0);
+                } else{
+                    System.out.println("Oke, hier is uw " + Drank.get(3));
+                    System.out.println("Uw saldo is nu: €" + (saldo));
+                    System.out.println("Was dat alles?");
+
+
+                    iets6();
+                }
+                break;
+
+            case "5":
+                costs = 1.25;
+                saldo = saldo - costs;
+                if (saldo <= -0.01 && saldo > -10.00) {
+                    System.out.println("Niet genoeg saldo. Aankoop geannuleerd.");
+                } else{
+                    System.out.println("Oke, hier is uw " + Drank.get(4));
+                    System.out.println("Uw saldo is nu: €" + (saldo));
+                    System.out.println("Was dat alles?");
+
+
+                    iets6();
+                }
+                break;
+
+
+        }
+    }
     public static void iets3(){}
     public static void iets6(){}
 
