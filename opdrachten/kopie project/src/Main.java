@@ -181,6 +181,11 @@ public class Main {
         for (String H3 : KoudEtenantwoord){
             System.out.println(H3);
         }
+        System.out.println(" \\\n" +
+                " ()()\n" +
+                "()()()\n" +
+                " ()()\n" +
+                "  ()");
         KoudetenAntw();
     }
 
@@ -260,6 +265,17 @@ public class Main {
                 break;
 
             case "nee":
+                System.out.println("(  )   (   )  )\n" +
+                        "     ) (   )  (  (\n" +
+                        "     ( )  (    ) )\n" +
+                        "     _____________\n" +
+                        "    <_____________> ___\n" +
+                        "    |             |/ _ \\\n" +
+                        "    |               | | |\n" +
+                        "    |               |_| |\n" +
+                        " ___|             |\\___/\n" +
+                        "/    \\___________/    \\\n" +
+                        "\\_____________________/");
                 System.out.println("Warm?");
 
                 iets3(); // refereerd naar de 3e choice
