@@ -384,6 +384,7 @@ public class Main {
 
     }
 
+
     public static void iets4() {
         Scanner scanner = new Scanner(System.in);
         String choice4 = scanner.next();
@@ -461,7 +462,54 @@ public class Main {
                 break;
         }
     }
-    public static void iets5(){}
+    public static void iets5() {
+        Scanner scanner = new Scanner(System.in);
+        String choice5 = scanner.next();
+
+        switch (choice5) {
+            case "2":
+                costs = 1.50;
+                saldo = saldo - costs;
+                if (saldo <= -0.01 && saldo > -10.00){
+                    System.out.println("Niet genoeg saldo. Aankoop geannuleerd.");}
+                else {
+                    System.out.println("Oke, hier is uw " + KoudeDrank.get(0));
+                    System.out.println("Uw saldo is nu: €" + (saldo));
+                    System.out.println("Was dat alles?");
+
+
+                    iets6();
+                }
+                break;
+            case "1":
+                saldo = saldo - costs;
+                if (saldo <= -0.01 && saldo > -10.00){
+                    System.out.println("Niet genoeg saldo. Aankoop geannuleerd.");}
+                else {
+                    System.out.println("Oke, hier is uw " + KoudeDrank.get(1));
+                    System.out.println("Uw saldo is nu: €" + (saldo));
+                    System.out.println("Was dat alles?");
+
+
+                    iets6();
+                }
+                break;
+            case "3":
+                costs = 2.25;
+                saldo = saldo - costs;
+                if (saldo <= -0.01 && saldo > -10.00){
+                    System.out.println("Niet genoeg saldo. Aankoop geannuleerd.");}
+                else{
+                    System.out.println("Oke, hier is uw " + KoudeDrank.get(2));
+                    System.out.println("Uw saldo is nu: €" + (saldo));
+                    System.out.println("Was dat alles?");
+
+
+                    iets6();
+                }
+                break;
+        }
+    }
     public static void iets6(){}
 
 }
