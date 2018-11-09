@@ -6,6 +6,8 @@ public class Main {
 
     public static double saldo = 3.00;
     public static double costs;
+    public static ArrayList<String> Drank = new ArrayList<>();
+    public static ArrayList<String> Drankantw = new ArrayList<>();
     public static ArrayList<String> WarmEten = new ArrayList<>();
     public static ArrayList<String> WarmEtenantw = new ArrayList<>();
     public static ArrayList<String> KoudEten = new ArrayList<>();
@@ -14,6 +16,20 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //array voor de frisdranken//
+        Drank.add("Coca Cola");//0
+        Drank.add("Fanta");//1
+        Drank.add("Sprite");//2
+        Drank.add("7-Up");//3
+        Drank.add("Mountain Due");//4
+
+        Drankantw.add("1.Coca Cola €1.50");//0
+        Drankantw.add("2.Fanta €1.50");//1
+        Drankantw.add("3.Sprite €1.00");//2
+        Drankantw.add("4.7-Up €1.00");//3
+        Drankantw.add("5.Mountain Due €1.25");//4
+
+        //Array's voor het eten//
         WarmEten.add("Pannenkoeken");//0
         WarmEten.add("Hamburger");//1
         WarmEten.add("Patat");//2
@@ -195,7 +211,36 @@ public class Main {
                 break;
         }
     }
-    public static void iets(){}
+    public static void iets() {
+
+
+        //eerste vraag//
+        System.out.println("Uw saldo is: €" + saldo);
+        System.out.println("Wat wilt u te drinken?");
+        System.out.println("Wilt u frisdrank?");
+        Scanner scanner = new Scanner(System.in);
+        String choice = scanner.next();
+        //choice 1
+        switch (choice) {
+            case "ja":
+                System.out.println("Oke!");
+                System.out.println("Maak een keuze:");
+                for (String H1:Drankantw){
+                    System.out.println(H1);
+                }
+                //refereerd naar 2e choice
+                iets2();
+                break;
+
+            case "nee":
+                System.out.println("Warm?");
+
+                iets3(); // refereerd naar de 3e choice
+                break;
+        }
+    }
+    public static void iets2(){}
+    public static void iets3(){}
     public static void iets6(){}
 
 }
