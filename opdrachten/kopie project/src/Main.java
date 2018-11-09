@@ -8,6 +8,10 @@ public class Main {
     public static double costs;
     public static ArrayList<String> Drank = new ArrayList<>();
     public static ArrayList<String> Drankantw = new ArrayList<>();
+    public static ArrayList<String> KoudeDrank = new ArrayList<>();
+    public static ArrayList<String> KoudeDrankantw = new ArrayList<>();
+    public static ArrayList<String> WarmeDrank = new ArrayList<>();
+    public static ArrayList<String> WarmeDrankantw = new ArrayList<>();
     public static ArrayList<String> WarmEten = new ArrayList<>();
     public static ArrayList<String> WarmEtenantw = new ArrayList<>();
     public static ArrayList<String> KoudEten = new ArrayList<>();
@@ -45,6 +49,29 @@ public class Main {
         KoudEtenantwoord.add("1.Salade €2.00");//0
         KoudEtenantwoord.add("2.Sandwich €2.50");//1
         KoudEtenantwoord.add("3.Seizoenen bord €3.00");//2
+
+        //array's voor warme draken
+        WarmeDrank.add("Warme chocolade melk(small)");//0
+        WarmeDrank.add("Warme chocolade melk(medium)");//1
+        WarmeDrank.add("Warme chocolade melk(large)");//2
+        WarmeDrank.add("Thee kaneel");//3
+        WarmeDrank.add("Koffie");//4
+
+        WarmeDrankantw.add("1.Warme chocolade melk(small) €1.00");//0
+        WarmeDrankantw.add("2.Warme chocolade melk(medium) €1.50");//1
+        WarmeDrankantw.add("3.Warme chocolade melk(large) €2.00");//2
+        WarmeDrankantw.add("4.Thee kaneel €1.50");//3
+        WarmeDrankantw.add("5.Koffie €1.25");//4
+
+        //array's voor koude dranken
+        KoudeDrank.add("Chocomel");//0
+        KoudeDrank.add("Water");//1
+        KoudeDrank.add("Bananen Smoothy");//2
+
+        KoudeDrankantw.add("1.Chocomel €1.50");//0
+        KoudeDrankantw.add("2.Water");//1
+        KoudeDrankantw.add("3.Bananen Smoothy €2.25");//2
+
         ietsmain();
     }
     public static void ietsmain() {
@@ -239,6 +266,7 @@ public class Main {
                 break;
         }
     }
+
     public static void iets2() {
 
 
@@ -329,7 +357,35 @@ public class Main {
 
         }
     }
-    public static void iets3(){}
+
+    public static void iets3() {
+
+        Scanner scanner = new Scanner(System.in);
+        String choice3 = scanner.next();
+        //choice 3
+        switch (choice3) {
+            case "ja":
+                System.out.println("Maak een keuze:");
+                for (String H2:WarmeDrankantw){
+                    System.out.println(H2);
+                }
+                iets4();
+                break;
+
+
+            case "nee":
+                System.out.println("Maak een keuze:");
+                for (String H3:KoudeDrankantw){
+                    System.out.println(H3);
+                }
+                iets5();
+                break;
+        }
+
+    }
+
+    public static void iets4(){}
+    public static void iets5(){}
     public static void iets6(){}
 
 }
